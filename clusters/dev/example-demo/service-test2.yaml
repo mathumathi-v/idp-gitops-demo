@@ -1,0 +1,17 @@
+apiVersion: platform.mathumathiv.com/v1alpha1
+kind: AppService
+metadata:
+  name: service-test2
+  namespace: example-demo
+  labels:
+    app.kubernetes.io/managed-by: backstage
+  annotations:
+    platform.mathumathiv.com/requested-by: unknown
+    platform.mathumathiv.com/requested-at: '2026-07-31T19:06:16.630Z'
+spec:
+  image: nginx:1.27-alpine
+  replicas: 2
+  size: small
+  environment: dev
+  team: team-alpha
+  costCentre: CC-1001
